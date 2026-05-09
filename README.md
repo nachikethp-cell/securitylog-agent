@@ -1,7 +1,7 @@
 [README.md](https://github.com/user-attachments/files/27559552/README.md)
-# securitylog-agent# OCI Security Log Agent
+# securitylog-agent
 
-An agentic tool that runs natural-language security queries against OCI Audit logs stored in an Oracle Autonomous Database (ADB). The agent uses an LLM to translate security questions into SQL, execute them via SQLcl MCP, and return formatted answers — no manual SQL required.
+An agentic tool that runs natural-language security queries against OCI Audit logs stored in an Oracle Autonomous Database (ADB). The agent uses an LLM to translate security questions into SQL, execute them via SQLcl MCP, and return formatted answers — no manual SQL required. This agent can be extended to run queries on other security logs
 
 ## How it works
 
@@ -55,6 +55,7 @@ Key audit log fields used in queries:
 adb_mcp/
 ├── securitylog_agent.py     # Main agent entry point
 ├── llm_functions.py         # Helper functions for printing LLM responses and token usage
+|-- oci_audit_parser.py      # Transforms OCI Audit log nested JSON to filtered and normalized format 
 └── .env                     # Environment variables (not committed)
 ```
 
