@@ -52,10 +52,10 @@ Key audit log fields used in queries:
 ## Project structure
 
 ```
-adb_mcp/
+securitylog-agent/
 ├── securitylog_agent.py     # Main agent entry point
 ├── llm_functions.py         # Helper functions for printing LLM responses and token usage
-|-- oci_audit_parser.py      # Transforms OCI Audit log nested JSON to filtered and normalized format 
+├── oci_audit_parser.py      # Transforms OCI Audit log nested JSON to filtered and normalized format 
 └── .env                     # Environment variables (not committed)
 ```
 
