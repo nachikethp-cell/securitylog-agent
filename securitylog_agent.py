@@ -246,7 +246,7 @@ messages = [
 
            **Workflow**
            Below are the instructions to connect to ADB instance with Audit events and run SQL queries to answer input prompts
-            - OCI Audit logs are stored in DB tables with names starting with 'AUDIT_LOGS_'. If you cannot find the table, use this table name 'AUDIT_LOGS_20260304_16_17_UTC'
+            - OCI Audit logs are stored in DB tables with names starting with 'AUDIT_LOGS_'. 
             - Connect to the ADB instance using the 'connect' tool in SQLcl MCP using the named connection. Named connection for the ADB instance is 'oci_adb'
             - Construct a SQL query to get information required for the input prompt. Use the input prompt, audit table name and audit table schema to contruct the SQL query
             - Execute the SQL query using 'run-sql' tool
